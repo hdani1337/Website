@@ -122,6 +122,7 @@ input, select, textarea {
 			border-color: transparent;
 		}
 
+
 /* Icon */
 
 	.icon {
@@ -207,7 +208,7 @@ input, select, textarea {
 		height: 100%;
 		left: 0;
 		opacity: 1;
-		position: fixed;
+		position: absolute;
 		top: 0px;
 	}
 
@@ -701,12 +702,12 @@ input, select, textarea {
 
 /* Wide */
 
-	@media screen and (max-width: 1680px) {
+	@media screen and (max-width: 2560px) {
 
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
+				font-size: 14pt;
 			}
 
 		/* BG */
@@ -777,18 +778,18 @@ input, select, textarea {
 		}
 
 		#bg {
-			background-size: 1500px auto;
-			width: 4500px;
+			background-size: 1920px auto;
+			width: 100%;
 		} }
 
 /* Normal */
 
-	@media screen and (max-width: 1280px) {
+@media screen and (min-width: 1080px) {
 
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
+				font-size: 14pt;
 			}
 
 		/* BG */
@@ -859,121 +860,19 @@ input, select, textarea {
 		}
 
 		#bg {
+			background-size: 1920px auto;
 			height: 100%;
 		} }
 
-/* Mobile */
-
-	@media screen and (max-width: 736px) {
-
-		/* Basic */
-
-			body {
-				min-width: 320px;
-			}
-
-			body, input, select, textarea {
-				font-size: 11pt;
-			}
-
-		/* BG */
-
-			@-moz-keyframes bg {
-				0% {
-					-moz-transform: translate3d(0,0,0);
-					-webkit-transform: translate3d(0,0,0);
-					-ms-transform: translate3d(0,0,0);
-					transform: translate3d(0,0,0);
-				}
-
-				100% {
-					-moz-transform: translate3d(-300px,0,0);
-					-webkit-transform: translate3d(-300px,0,0);
-					-ms-transform: translate3d(-300px,0,0);
-					transform: translate3d(-300px,0,0);
-				}
-
-	}
-
-		@-webkit-keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-300px,0,0);
-				-webkit-transform: translate3d(-300px,0,0);
-				-ms-transform: translate3d(-300px,0,0);
-				transform: translate3d(-300px,0,0);
-			}
-			}
-
-		@-ms-keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-300px,0,0);
-				-webkit-transform: translate3d(-300px,0,0);
-				-ms-transform: translate3d(-300px,0,0);
-				transform: translate3d(-300px,0,0);
-			}
-		}
-
-		@keyframes bg {
-			0% {
-				-moz-transform: translate3d(0,0,0);
-				-webkit-transform: translate3d(0,0,0);
-				-ms-transform: translate3d(0,0,0);
-				transform: translate3d(0,0,0);
-			}
-
-			100% {
-				-moz-transform: translate3d(-300px,0,0);
-				-webkit-transform: translate3d(-300px,0,0);
-				-ms-transform: translate3d(-300px,0,0);
-				transform: translate3d(-300px,0,0);
-			}
-		}
-
-		#bg {
-			height: 100%;
-		}
-
-	/* Header */
-
-		#header h1 {
-			font-size: 2.5em;
-		}
-
-		#header p {
-			font-size: 1em;
-		}
-
-		#header nav {
-			font-size: 1em;
-		}
-
-			#header nav a:hover {
-				font-size: 1em;
-			}
-
-			#header nav a:active {
-				font-size: 1em;
-			} }
-
 /* Mobile (Portrait) */
 
-	@media screen and (max-width: 480px) {
+	@media screen and (max-width: 1080px) {
 
 		/* BG */
+
+		body, input, select, textarea {
+			font-size: 12pt;
+		}
 
 			@-moz-keyframes bg {
 				0% {
@@ -1041,7 +940,8 @@ input, select, textarea {
 		}
 
 		#bg {
-			left: -400px;
+			height: 100%;
+			background-size: 1440px auto;
 		}
 
 	/* Header */
